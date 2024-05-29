@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>媒体</title>
+</head>
+<body>
+<!--<embed src="pear_snow.mp3" >
+<embed src="young_china.mp4">-->
+<!-- h5 -->
+<!--为了兼容，通常会写多个资源，第一个不能播放，就播放第二个，原因是不同浏览器支持的格式不一样
+浏览器会从上往下依次去读，直到读到自己能够识别的格式，并且不会继续往后读-->
+<audio controls="controls" autoplay="autoplay" loop>
+    <source src="pear_snow.mp3">
+</audio>
+<video controls="controls" autoplay="autoplay" loop>
+    <source src="young_china.mp4">
+    <source src="young_china.flv">
+</video>
+</body>
+</html>

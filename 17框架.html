@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>框架</title>
+</head>
+<!--<frameset rows="100,200">-->
+<!-- * 表示剩下所有的空间-->
+<frameset rows="100,*">
+    <frame src="13小案例.html" name="top">
+    <!--a标签属性target让页面跳转到什么地方-->
+    <frameset rows="300,*">
+        <frame src="16小案例.html" name="mid">
+        <frameset>
+            <frame src="08小案例.html" name="under">
+        </frameset>
+    </frameset>
+</frameset>
+<!--当框架不能运行的时候，执行noframes标签里面的内容-->
+<noframes>
+    <body>
+    <span>框架丢失，请重试</span>
+    </body>
+</noframes>
+</html>
